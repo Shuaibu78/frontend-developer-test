@@ -71,7 +71,7 @@ const Footer = () => {
             </Flex>
             <Flex
               direction={isMobile ? "row" : "row"}
-              width="100%"
+              width={isMobile ? "100%" : "60%"}
               justifyContent="space-between"
               px={isMobile ? "10px" : "0px"}
             >
