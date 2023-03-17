@@ -1,4 +1,4 @@
-import { Text, Image, Flex, Button } from "@chakra-ui/react";
+import { Text, Image, Flex } from "@chakra-ui/react";
 import { FunctionComponent } from "react";
 import ArrowLeft from "../../assets/images/arrowLeft.svg";
 import ArrowLeftBlack from "../../assets/images/arrowLeftBlack.svg";

@@ -1,12 +1,4 @@
-// components/WShapeImages.js
-import React from "react";
-import {
-  Box,
-  Grid,
-  GridItem,
-  Flex,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import { Box, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const MotionBox = motion(Box);
