@@ -2,11 +2,13 @@ import { Box, Text, Image, Flex, useBreakpointValue } from "@chakra-ui/react";
 import Davido from "../../assets/images/davidoOnACar.png";
 import WomanWithFan from "../../assets/images/womanWithfan.png";
 import TryItButton from "../tryItButton/tryItButton";
+import BackgroundWithSquares from "../../component/bgWithBoxes/bgWithBoxes";
 
 const HeroSection = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <Box py={8} pl={isMobile ? 8 : 20} pr={isMobile ? 8 : 0} bgColor="bgColor">
+      {!isMobile && <BackgroundWithSquares />}
       <Flex
         direction={isMobile ? "column" : "row"}
         alignItems="flex-start"

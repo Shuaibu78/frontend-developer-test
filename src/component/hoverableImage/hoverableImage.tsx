@@ -38,7 +38,7 @@ const HoverableImage = ({ src, alt }: { src: string; alt: string }) => {
         _hover={{
           backgroundColor: "rgba(0, 0, 0, 0.01)",
         }}
-        backgroundColor="rgba(0, 0, 0, 0.61)"
+        backgroundColor="rgba(0, 0, 0, 0.829)"
       />
     </MotionBox>
   );
