@@ -1,6 +1,6 @@
 import { Box, Text, Image, Flex, useBreakpointValue } from "@chakra-ui/react";
-import Davido from "../../assets/images/davidoOnACar.svg";
-import WomanWithFan from "../../assets/images/womanWithfan.svg";
+import Davido from "../../assets/images/davidoOnACar.png";
+import WomanWithFan from "../../assets/images/womanWithfan.png";
 import TryItButton from "../tryItButton/tryItButton";
 
 const HeroSection = () => {

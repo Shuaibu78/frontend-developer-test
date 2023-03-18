@@ -7,7 +7,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import TryItButton from "../tryItButton/tryItButton";
-import Models from "../../assets/images/models.svg";
+import Models from "../../assets/images/models.png";
 
 const CareerSection = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
