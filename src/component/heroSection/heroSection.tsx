@@ -7,7 +7,13 @@ import BackgroundWithSquares from "../../component/bgWithBoxes/bgWithBoxes";
 const HeroSection = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
-    <Box py={8} pl={isMobile ? 8 : 20} pr={isMobile ? 8 : 0} bgColor="bgColor">
+    <Box
+      py={8}
+      pl={isMobile ? 8 : 20}
+      pr={isMobile ? 8 : 0}
+      bgColor="bgColor"
+      overflow="hidden"
+    >
       {!isMobile && <BackgroundWithSquares />}
       <Flex
         direction={isMobile ? "column" : "row"}
@@ -30,7 +36,7 @@ const HeroSection = () => {
             maxWidth={isMobile ? "100%" : "100%"}
             color="white"
             letterSpacing="0.05em"
-            lineHeight={isMobile ? "45px" : "76px"}
+            lineHeight={isMobile ? "45px" : "78px"}
           >
             AN INNOVATIVE PLATFORM THAT{" "}
             <Text color="primaryColor">SUPPORTS ARTISTS.</Text>

@@ -3,7 +3,7 @@ import { Box, Grid } from "@chakra-ui/react";
 const BackgroundWithSquares = () => {
   const numberOfRows = 8;
   const numberOfColumns = 14;
-  const squareSize = "105px";
+  const squareSize = "102px";
 
   const renderSquares = () => {
     const squares = [];

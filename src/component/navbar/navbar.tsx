@@ -13,14 +13,25 @@ const Navbar = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
 
   return (
-    <Box bg="bgColor" px={isMobile ? 12 : 20} color="white" height="70px">
+    <Box
+      bg="bgColor"
+      px={isMobile ? 12 : 20}
+      color="white"
+      height="70px"
+      position="relative"
+    >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-        <Text fontSize="xxl" fontWeight="bold" color="primaryColor">
+        <Text fontSize="xxl" fontWeight="bold" color="primaryColor" zIndex={2}>
           Logo
         </Text>
 
         {!isMobile && (
-          <Stack direction={"row"} spacing={20} alignItems={"center"}>
+          <Stack
+            direction={"row"}
+            spacing={20}
+            alignItems={"center"}
+            zIndex={2}
+          >
             <Text>Features</Text>
             <Text>News</Text>
           </Stack>
@@ -33,6 +44,7 @@ const Navbar = () => {
             borderColor="primaryColor"
             color="primaryColor"
             _hover={{ bgColor: "primaryColor", color: "bgColor" }}
+            zIndex={2}
           >
             Sign Up
           </Button>
@@ -46,6 +58,7 @@ const Navbar = () => {
               border: "1px",
               borderColor: "primaryColor",
             }}
+            zIndex={2}
           >
             Log In
           </Button>

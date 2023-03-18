@@ -7,6 +7,7 @@ const WShapeImages = ({ images }: { images: string[] }) => {
   const animationVariants = {
     hidden: { opacity: 0, scale: 0.5 },
     visible: { opacity: 1, scale: 1 },
+    hover: { scale: 1.2 },
   };
   const isMobile = useBreakpointValue({ base: true, md: false });
   const responsiveMarginTop = isMobile ? "-10rem" : "-16rem";
@@ -19,7 +20,8 @@ const WShapeImages = ({ images }: { images: string[] }) => {
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        transition={{ duration: 0.5, delay: index * 0.3 }}
+        whileHover="hover"
+        transition={{ duration: 0.3 }}
       >
         <MotionBox
           as="img"
